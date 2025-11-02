@@ -12,7 +12,7 @@ Resources:
           Value: "Webserver"
       UserData:
         Fn::Base64:
-          !Sun |
+          !Sub |
             #!/bin/bash -xe
             yum install -y httpd.x86_64
             systemctl start httpd.service
