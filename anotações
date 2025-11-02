@@ -1,1 +1,71 @@
+## 1. Acessar o site da AWS
 
+## 2. Abrir o serviço CloudFormation
+
+ - No topo do console, clique em "Services".
+
+ - No campo de busca, digite CloudFormation.
+
+ - Clique no serviço CloudFormation.
+
+## 3. Iniciar a criação de uma nova stack
+
+ - No canto superior direito, clique em Create stack.
+
+ - Escolha With new resources (standard).
+
+## 4. Selecionar o template
+
+Você terá algumas opções:
+
+Opção A — Enviar arquivo do computador
+
+ - Clique em Upload a template file.
+
+ - Clique em Choose file.
+
+ - Escolha seu arquivo .yaml ou .json.
+
+Opção B — Usar um template do S3
+
+ - Selecione Specify an Amazon S3 URL.
+
+ - Cole a URL do template hospedado no S3.
+
+ - Depois clique em Next.
+
+## 5. Configurar Nome e Parâmetros
+
+ - Em Stack Name, coloque um nome para sua stack (ex.: minha-stack-demo).
+
+ - Em Parameters, preencha os valores que o template exige (VPC ID, Subnet, etc).
+
+ - Clique em Next.
+
+## 6. Configurar Opções da Stack
+
+Nesta etapa, você pode deixar tudo como padrão, ou configurar:
+
+ - Tags
+
+ - Permissões IAM
+
+ - Opções avançadas (rollback, notificações, proteção da stack)
+
+Depois clique em Next.
+
+## 7. Revisar e Criar
+
+Verifique todas as configurações.
+
+Se o template cria recursos IAM, marque a caixa “I acknowledge that AWS CloudFormation might create IAM resources”.
+
+Clique em Create stack.
+
+## 8. Acompanhar a criação
+
+Você será levado à página da sua stack.
+
+Clique na aba Events para ver o progresso em tempo real.
+
+Quando aparecer o status CREATE_COMPLETE, sua stack foi criada com sucesso.
